@@ -1,0 +1,43 @@
+.body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #6a6b71;
+}
+.split {
+  text-align: center;
+}
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 60px;
+}
+h1:hover {
+  animation: glitch 0.25s ease-out;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translateX(0);
+    text-shadow: 0 0 0 #0227f5 0 0 0 #4affff 0 0 0 #ff0825 0 0 0 #fffb19;
+  }
+  20% {
+    transform: translateX(-0.2em);
+    text-shadow: 0.1em 0 0 #0227f5 -0.05em 0 0 #4affff -0.1em 0 0 #ff0825 -0.2em
+      0 0 #fffb19;
+  }
+  40% {
+    transform: translateX(0.1em);
+    text-shadow: 0.2em 0 0 #0227f5 -0.1em 0 0 #4affff 0.1em 0 0 #ff0825 -0.02em
+      0 0 #fffb19;
+  }
+
+  60% {
+    transform: translateX(-0.2em);
+    text-shadow: 0.1em 0 0 #0227f5 -0.05em 0 0 #4affff -0.01em 0 0 #ff0825 0.2em
+      0 0 #fffb19;
+  }
+
+  80% {
+    transform: translateX(0.1em);
+    text-shadow: 0 0 0 #0227f5 0 0 0 #4affff 0 0 0 #ff0825 0 0 0 #fffb19;
+  }
+}
